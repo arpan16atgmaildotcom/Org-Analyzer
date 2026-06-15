@@ -1,0 +1,85 @@
+{
+  "runId": "8e9f4d4d-0da5-4ad5-b21e-1526e7f1a0c5",
+  "timestamp": "2026-05-22T08:13:15.334Z",
+  "org": {
+    "id": "00DAP00000GRUYf2AP",
+    "alias": "Dev3-Org",
+    "name": "Dev3-Org",
+    "edition": "Unknown",
+    "instanceUrl": "https://eosroyalcanin--dev3.sandbox.my.salesforce.com",
+    "apiVersion": "67.0",
+    "isSandbox": false
+  },
+  "score": 82,
+  "categoryScores": {
+    "security": 60,
+    "automation": 84,
+    "apex": 90,
+    "datamodel": 100,
+    "deployment": 100
+  },
+  "findingCounts": {
+    "critical": 1,
+    "warning": 5,
+    "info": 4
+  },
+  "actionItems": [
+    {
+      "priority": 1,
+      "effort": "Medium",
+      "impact": "Critical",
+      "title": "System Administrator Profile Detected",
+      "category": "",
+      "action": "Audit admin profile assignments. Create custom profiles with least-privilege access and reassign users.",
+      "deadline": "Immediate"
+    },
+    {
+      "priority": 2,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "5 Profiles Have Broad Data Permissions",
+      "category": "",
+      "action": "Restrict broad permissions to only system integration profiles. Use permission sets for exceptions.",
+      "deadline": "30 days"
+    },
+    {
+      "priority": 3,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "2 Permission Set(s) Grant ModifyAllData",
+      "category": "",
+      "action": "Remove ModifyAllData from permission sets unless strictly required for integration users.",
+      "deadline": "30 days"
+    },
+    {
+      "priority": 4,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "10 Active Flows Lack Fault Handling",
+      "category": "",
+      "action": "Add Fault connector paths to all Screen and Autolaunched Flows. Log errors to a custom object for visibility.",
+      "deadline": "30 days"
+    },
+    {
+      "priority": 5,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "Automation Conflicts on 1 Object(s)",
+      "category": "",
+      "action": "Consolidate automation into a single Record-Triggered Flow per object. Retire redundant flows.",
+      "deadline": "30 days"
+    },
+    {
+      "priority": 6,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "34 Apex Triggers — High Volume",
+      "category": "",
+      "action": "Consider a Trigger Framework (one trigger per object, handler pattern) to centralise trigger logic.",
+      "deadline": "30 days"
+    }
+  ],
+  "metadataRetained": null,
+  "metaDir": "/Users/arpan.datta/Org Analyzer/orgs/Dev3-Org/8e9f4d4d-0da5-4ad5-b21e-1526e7f1a0c5",
+  "folderSizeBytes": 24895662
+}

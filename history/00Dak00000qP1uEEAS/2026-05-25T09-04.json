@@ -1,0 +1,90 @@
+{
+  "runId": "111382a7-5220-416a-9f41-8ce9f7033999",
+  "timestamp": "2026-05-25T09:04:06.764Z",
+  "org": {
+    "id": "00Dak00000qP1uEEAS",
+    "alias": "SLackorg",
+    "name": "SLackorg",
+    "edition": "Unknown",
+    "apiVersion": "66.0",
+    "isSandbox": false
+  },
+  "score": 92,
+  "categoryScores": {
+    "security": 80,
+    "automation": 92,
+    "apex": 100,
+    "datamodel": 100,
+    "deployment": 100
+  },
+  "findingCounts": {
+    "critical": 1,
+    "warning": 1,
+    "info": 3
+  },
+  "actionItems": [
+    {
+      "priority": 1,
+      "effort": "Medium",
+      "impact": "Critical",
+      "title": "System Administrator Profile Detected",
+      "action": "Audit admin profile assignments. Create custom profiles with least-privilege access and reassign users.",
+      "components": [
+        "Admin"
+      ],
+      "deadline": "Immediate"
+    },
+    {
+      "priority": 2,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "13 Active Flows Lack Fault Handling",
+      "action": "Add Fault connector paths to all Screen and Autolaunched Flows. Log errors to a custom object for visibility.",
+      "components": [
+        "Add_Experiences_to_Prompt",
+        "Create_a_Case_Running_User",
+        "ESA_Route_to_Queue",
+        "Get_Customer_Details",
+        "Get_Experience_Details",
+        "Get_Sessions",
+        "Issue_Bulk_Resort_Credits",
+        "Issue_Resort_Credit",
+        "PersonalizedSchedule",
+        "Route_to_ESA",
+        "customer_satisfaction",
+        "discovery_call_assessment",
+        "net_promoter_score"
+      ],
+      "deadline": "30 days"
+    }
+  ],
+  "storage": {
+    "dataStorage": {
+      "max": 55,
+      "remaining": null
+    },
+    "fileStorage": {
+      "max": 20,
+      "remaining": null
+    },
+    "bigObjectStorage": null
+  },
+  "orgFeatures": {
+    "agentforce": {
+      "enabled": false,
+      "activeCount": 0,
+      "totalCount": 0
+    },
+    "clouds": [
+      "Sales Cloud",
+      "Service Cloud"
+    ],
+    "packages": [
+      {
+        "namespace": "slackplatform"
+      }
+    ]
+  },
+  "metadataRetained": false,
+  "folderSizeBytes": 1753058
+}

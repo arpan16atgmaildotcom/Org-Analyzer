@@ -1,0 +1,96 @@
+{
+  "runId": "467c8e4d-7bcf-4c77-bc2f-ea35e60bcc78",
+  "timestamp": "2026-05-24T16:14:32.586Z",
+  "org": {
+    "id": "00Daj00000rTYuDEAW",
+    "alias": "AF_DX2",
+    "name": "AF_DX2",
+    "edition": "Unknown",
+    "instanceUrl": "https://trailheadcom-5bd-dev-ed.develop.my.salesforce.com",
+    "apiVersion": "66.0",
+    "isSandbox": false
+  },
+  "score": 89,
+  "categoryScores": {
+    "security": 70,
+    "automation": 92,
+    "apex": 100,
+    "datamodel": 100,
+    "deployment": 100
+  },
+  "findingCounts": {
+    "critical": 1,
+    "warning": 2,
+    "info": 3
+  },
+  "actionItems": [
+    {
+      "priority": 1,
+      "effort": "Medium",
+      "impact": "Critical",
+      "title": "System Administrator Profile Detected",
+      "action": "Audit admin profile assignments. Create custom profiles with least-privilege access and reassign users.",
+      "components": [
+        "Admin"
+      ],
+      "deadline": "Immediate"
+    },
+    {
+      "priority": 2,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "3 Profiles Have Broad Data Permissions",
+      "action": "Restrict broad permissions to only system integration profiles. Use permission sets for exceptions.",
+      "components": [
+        "Admin",
+        "Analytics Cloud Integration User",
+        "Modified Admin User"
+      ],
+      "deadline": "30 days"
+    },
+    {
+      "priority": 3,
+      "effort": "Medium",
+      "impact": "High",
+      "title": "9 Active Flows Lack Fault Handling",
+      "action": "Add Fault connector paths to all Screen and Autolaunched Flows. Log errors to a custom object for visibility.",
+      "components": [
+        "Add_Experiences_to_Prompt",
+        "ESA_Route_to_Queue",
+        "Get_Customer_Details",
+        "Get_Experience_Details",
+        "Get_Sessions",
+        "Issue_Bulk_Resort_Credits",
+        "Issue_Resort_Credit",
+        "PersonalizedSchedule",
+        "Route_to_ESA"
+      ],
+      "deadline": "30 days"
+    }
+  ],
+  "storage": {
+    "dataStorage": {
+      "max": 55,
+      "remaining": null
+    },
+    "fileStorage": {
+      "max": 20,
+      "remaining": null
+    },
+    "bigObjectStorage": null
+  },
+  "orgFeatures": {
+    "agentforce": {
+      "enabled": false,
+      "activeCount": 0,
+      "totalCount": 0
+    },
+    "clouds": [
+      "Sales Cloud",
+      "Service Cloud"
+    ],
+    "packages": null
+  },
+  "metadataRetained": false,
+  "folderSizeBytes": 1461199
+}

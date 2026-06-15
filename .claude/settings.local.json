@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(NODE_PATH=\"/Users/arpan.datta/Org Analyzer/client/node_modules\" node /tmp/pdf_full3.cjs)",
+      "Bash(npm run *)",
+      "Bash(node -e ' *)",
+      "Bash(rm -f .server.pid)",
+      "Bash(rm -rf client/dist)",
+      "Bash(bash start.sh)",
+      "Bash(sf check *)",
+      "Bash(node_modules/.bin/vite build *)",
+      "WebFetch(domain:docs.anthropic.com)"
+    ]
+  }
+}
