@@ -6,3 +6,4 @@ orgs/
 .env
 server.log
 .server.pid
+history/
